@@ -7,7 +7,7 @@ import crafttweaker.item.IIngredient;
 <academy:energy_unit:*>.displayName = "Энергоячейка";
 //Adding Descriptions
 mods.jei.JEI.addDescription(<nuclearcraft:alloy:14>,"Его пиздец как сложно сделать гыг");
-<minecraft:lava_bucket>.addTooltip("[H]Arxaniys bath water");
+<minecraft:lava_bucket>.addTooltip(format.red("[H]Arxaniys bath water"));
 
 
 val removedvanillagear = [                            //Rremoved vanilla-stile gear
