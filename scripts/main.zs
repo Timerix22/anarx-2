@@ -10,7 +10,7 @@ mods.jei.JEI.addDescription(<nuclearcraft:alloy:14>,"Его пиздец как 
 <minecraft:lava_bucket>.addTooltip(format.red("[H]Arxaniys bath water"));
 
 
-val removedvanillagear = [                            //Rremoved vanilla-stile gear
+val removedvanillagear = [                            //Removed vanilla-stile gear
     <minecraft:golden_hoe>,
     <minecraft:golden_sword>,
     <minecraft:golden_axe>,
