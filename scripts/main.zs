@@ -137,11 +137,13 @@ val removeditems = [                                //removed
     <tconstruct:slime_boots:2>,
     <tconstruct:slime_boots:3>,
     <tconstruct:slime_boots:4>,
+	<tconstruct:slime_boots:5>,
     <tconstruct:slimesling>,
     <tconstruct:slimesling:1>,
     <tconstruct:slimesling:2>,
     <tconstruct:slimesling:3>,
     <tconstruct:slimesling:4>,
+	<tconstruct:slimesling:5>,
     <tconstruct:throwball>,
     <tconstruct:throwball:1>,
     <immersiveengineering:wooden_device1>,
@@ -239,7 +241,26 @@ val changedrecipes = [                                            //Other change
     <academy:developer_portable:*>,
     <academy:dev_advanced>,
     <academy:dev_normal>,
-    <academy:energy_unit:*>
+    <academy:energy_unit:*>,
+	<academy:magnetic_coil>,
+	<davincisvessels:balloon:3>,
+	<davincisvessels:balloon:11>,
+	<davincisvessels:balloon:10>,
+	<davincisvessels:balloon:2>,
+	<davincisvessels:balloon:6>,
+	<davincisvessels:balloon>,
+	<davincisvessels:balloon:8>,
+	<davincisvessels:balloon:7>,
+	<davincisvessels:balloon:15>,
+	<davincisvessels:engine>,
+	<davincisvessels:balloon:12>,
+	<davincisvessels:balloon:14>,
+	<davincisvessels:balloon:1>,
+	<davincisvessels:balloon:4>,
+	<davincisvessels:balloon:5>,
+	<davincisvessels:balloon:13>,
+	<davincisvessels:balloon:9>,
+	<davincisvessels:marker>
 ] as IItemStack[];
 
 //Removing recipes
@@ -314,6 +335,7 @@ for item in removedvanillagear {                                //Removed vanill
         recipes.addShaped(<cyberware:surgery>, [[<immersiveengineering:material:27>, <nuclearcraft:part:8>, <immersiveengineering:material:27>],[<cyberware:cyberlimbs>, <immersiveengineering:metal_decoration0:5>, <cyberware:cyberlimbs:1>], [<minecraft:shears>, <immersiveengineering:metal:38>, <minecraft:shears>]]);
         recipes.addShaped(<cyberware:surgery_chamber>, [[<immersiveengineering:metal:38>, <immersiveengineering:material:27>, <immersiveengineering:metal:38>],[<immersiveengineering:metal_decoration0:4>, <minecraft:iron_door>, <immersiveengineering:metal_decoration0:4>], [<immersiveengineering:metal:38>, <nuclearcraft:part:7>, <immersiveengineering:metal:38>]]);
     //AcademyCraft
+		recipes.addShaped(<academy:magnetic_coil>, [[<immersiveengineering:metal:31>, <immersiveengineering:metal_decoration0:1>, <immersiveengineering:metal:31>],[<immersiveengineering:metal:31>, <immersiveengineering:metal_device0:1>, <immersiveengineering:metal:31>], [<immersiveengineering:metal:39>, <minecraft:diamond>, <immersiveengineering:metal:39>]]);
         recipes.addShaped(<academy:terminal_installer>, [[<academy:data_chip>, <academy:solar_gen>, <academy:data_chip>],[<cyberware:eye_upgrades>, <academy:brain_component>, <immersiveengineering:metal:31>], [<academy:info_component>, <academy:calc_chip>, <academy:info_component>]]);
         recipes.addShaped(<academy:tutorial>, [[null, null, null],[<academy:data_chip>, <webdisplays:screen>, <minecraft:diamond>], [<immersiveengineering:metal:31>, <immersiveengineering:metal:31>, <immersiveengineering:metal:31>]]);
         recipes.addShaped(<academy:mag_hook>, [[null, <immersiveengineering:metal:39>, null],[<immersiveengineering:metal:39>, <immersiveengineering:metal:38>, <immersiveengineering:metal:39>], [null, <immersiveengineering:metal:39>, null]]);
@@ -332,7 +354,42 @@ for item in removedvanillagear {                                //Removed vanill
         recipes.addShaped(<academy:dev_normal>, [[<academy:brain_component>, <academy:info_component>, <academy:energy_convert_component>],[<academy:mat_core>, <minecraft:bed:*>, <nuclearcraft:part:7>], [<academy:data_chip>, <academy:machine_frame>, <academy:calc_chip>]]);
         recipes.addShaped(<academy:mat_core>, [[null, <minecraft:diamond>, null],[<academy:calc_chip>, <minecraft:lapis_block>, <academy:data_chip>], [null, <academy:energy_convert_component>, null]]);
         recipes.addShaped(<academy:developer_portable:13>, [[<academy:data_chip>, <tconstruct:clear_glass>, <academy:calc_chip>],[<academy:brain_component>, <academy:info_component>, <academy:energy_convert_component>], [<immersiveengineering:metal:31>, <minecraft:dye:4>, <immersiveengineering:metal:31>]]);
-    //Arc Furnace RC alloys
+    //Davinci`s Vessels
+		recipes.addShaped(<davincisvessels:balloon:6>, [[<minecraft:carpet:6>, <nuclearcraft:part:6>, <minecraft:carpet:6>],[<minecraft:string>, <forge:bucketfilled>.withTag({FluidName: "hydrogen", Amount: 1000}).withTag({FluidName: "hydrogen", Amount: 1000}), <minecraft:string>], [<minecraft:carpet:6>, <nuclearcraft:part:6>, <minecraft:carpet:6>]]);
+		recipes.addShaped(<davincisvessels:balloon:2>, [[<minecraft:carpet:2>, <nuclearcraft:part:6>, <minecraft:carpet:2>],[<minecraft:string>, <forge:bucketfilled>.withTag({FluidName: "hydrogen", Amount: 1000}), <minecraft:string>], [<minecraft:carpet:2>, <nuclearcraft:part:6>, <minecraft:carpet:2>]]);
+		recipes.addShaped(<davincisvessels:balloon:10>, [[<minecraft:carpet:10>, <nuclearcraft:part:6>, <minecraft:carpet:10>],[<minecraft:string>, <forge:bucketfilled>.withTag({FluidName: "hydrogen", Amount: 1000}), <minecraft:string>], [<minecraft:carpet:10>, <nuclearcraft:part:6>, <minecraft:carpet:10>]]);
+		recipes.addShaped(<davincisvessels:balloon:11>, [[<minecraft:carpet:11>, <nuclearcraft:part:6>, <minecraft:carpet:11>],[<minecraft:string>, <forge:bucketfilled>.withTag({FluidName: "hydrogen", Amount: 1000}), <minecraft:string>], [<minecraft:carpet:11>, <nuclearcraft:part:6>, <minecraft:carpet:11>]]);
+		recipes.addShaped(<davincisvessels:balloon:3>, [[<minecraft:carpet:3>, <nuclearcraft:part:6>, <minecraft:carpet:3>],[<minecraft:string>, <forge:bucketfilled>.withTag({FluidName: "hydrogen", Amount: 1000}), <minecraft:string>], [<minecraft:carpet:3>, <nuclearcraft:part:6>, <minecraft:carpet:3>]]);
+		recipes.addShaped(<davincisvessels:balloon:9>, [[<minecraft:carpet:9>, <nuclearcraft:part:6>, <minecraft:carpet:9>],[<minecraft:string>, <forge:bucketfilled>.withTag({FluidName: "hydrogen", Amount: 1000}), <minecraft:string>], [<minecraft:carpet:9>, <nuclearcraft:part:6>, <minecraft:carpet:9>]]);
+		recipes.addShaped(<davincisvessels:balloon:13>, [[<minecraft:carpet:13>, <nuclearcraft:part:6>, <minecraft:carpet:13>],[<minecraft:string>, <forge:bucketfilled>.withTag({FluidName: "hydrogen", Amount: 1000}), <minecraft:string>], [<minecraft:carpet:13>, <nuclearcraft:part:6>, <minecraft:carpet:13>]]);
+		recipes.addShaped(<davincisvessels:balloon:5>, [[<minecraft:carpet:5>, <nuclearcraft:part:6>, <minecraft:carpet:5>],[<minecraft:string>, <forge:bucketfilled>.withTag({FluidName: "hydrogen", Amount: 1000}), <minecraft:string>], [<minecraft:carpet:5>, <nuclearcraft:part:6>, <minecraft:carpet:5>]]);
+		recipes.addShaped(<davincisvessels:balloon:4>, [[<minecraft:carpet:4>, <nuclearcraft:part:6>, <minecraft:carpet:4>],[<minecraft:string>, <forge:bucketfilled>.withTag({FluidName: "hydrogen", Amount: 1000}), <minecraft:string>], [<minecraft:carpet:4>, <nuclearcraft:part:6>, <minecraft:carpet:4>]]);
+		recipes.addShaped(<davincisvessels:balloon:1>, [[<minecraft:carpet:1>, <nuclearcraft:part:6>, <minecraft:carpet:1>],[<minecraft:string>, <forge:bucketfilled>.withTag({FluidName: "hydrogen", Amount: 1000}), <minecraft:string>], [<minecraft:carpet:1>, <nuclearcraft:part:6>, <minecraft:carpet:1>]]);
+		recipes.addShaped(<davincisvessels:balloon:14>, [[<minecraft:carpet:14>, <nuclearcraft:part:6>, <minecraft:carpet:14>],[<minecraft:string>, <forge:bucketfilled>.withTag({FluidName: "hydrogen", Amount: 1000}), <minecraft:string>], [<minecraft:carpet:14>, <nuclearcraft:part:6>, <minecraft:carpet:14>]]);
+		recipes.addShaped(<davincisvessels:balloon:12>, [[<minecraft:carpet:12>, <nuclearcraft:part:6>, <minecraft:carpet:12>],[<minecraft:string>, <forge:bucketfilled>.withTag({FluidName: "hydrogen", Amount: 1000}), <minecraft:string>], [<minecraft:carpet:12>, <nuclearcraft:part:6>, <minecraft:carpet:12>]]);
+		recipes.addShaped(<davincisvessels:balloon:15>, [[<minecraft:carpet:15>, <nuclearcraft:part:6>, <minecraft:carpet:15>],[<minecraft:string>, <forge:bucketfilled>.withTag({FluidName: "hydrogen", Amount: 1000}), <minecraft:string>], [<minecraft:carpet:15>, <nuclearcraft:part:6>, <minecraft:carpet:15>]]);
+		recipes.addShaped(<davincisvessels:balloon:7>, [[<minecraft:carpet:7>, <nuclearcraft:part:6>, <minecraft:carpet:7>],[<minecraft:string>, <forge:bucketfilled>.withTag({FluidName: "hydrogen", Amount: 1000}), <minecraft:string>], [<minecraft:carpet:7>, <nuclearcraft:part:6>, <minecraft:carpet:7>]]);
+		recipes.addShaped(<davincisvessels:balloon:8>, [[<minecraft:carpet:8>, <nuclearcraft:part:6>, <minecraft:carpet:8>],[<minecraft:string>, <forge:bucketfilled>.withTag({FluidName: "hydrogen", Amount: 1000}), <minecraft:string>], [<minecraft:carpet:8>, <nuclearcraft:part:6>, <minecraft:carpet:8>]]);
+		recipes.addShaped(<davincisvessels:balloon>, [[<minecraft:carpet>, <nuclearcraft:part:6>, <minecraft:carpet>],[<minecraft:string>, <forge:bucketfilled>.withTag({FluidName: "hydrogen", Amount: 1000}), <minecraft:string>], [<minecraft:carpet>, <nuclearcraft:part:6>, <minecraft:carpet>]]);
+		recipes.addShaped(<davincisvessels:engine>, [[<immersiveengineering:metal:31>, <immersiveengineering:material:10>, <immersiveengineering:metal:31>],[<immersiveengineering:material:11>, <simplegenerators:turbine_simple>, <immersiveengineering:material:11>], [<immersiveengineering:metal:31>, <immersiveengineering:material:10>, <immersiveengineering:metal:31>]]);
+		recipes.addShapeless(<davincisvessels:balloon>, [<davincisvessels:balloon:*>,<ore:dyeWhite>]);
+		recipes.addShapeless(<davincisvessels:balloon:8>, [<davincisvessels:balloon:*>,<ore:dyeLightGray>]);
+		recipes.addShapeless(<davincisvessels:balloon:7>, [<davincisvessels:balloon:*>,<ore:dyeGray>]);
+		recipes.addShapeless(<davincisvessels:balloon:15>, [<davincisvessels:balloon:*>,<ore:dyeBlack>]);
+		recipes.addShapeless(<davincisvessels:balloon:6>, [<davincisvessels:balloon:*>,<ore:dyePink>]);
+		recipes.addShapeless(<davincisvessels:balloon:2>, [<davincisvessels:balloon:*>,<ore:dyeMagenta>]);
+		recipes.addShapeless(<davincisvessels:balloon:10>, [<davincisvessels:balloon:*>,<ore:dyePurple>]);
+		recipes.addShapeless(<davincisvessels:balloon:11>, [<davincisvessels:balloon:*>,<ore:dyeBlue>]);
+		recipes.addShapeless(<davincisvessels:balloon:3>, [<davincisvessels:balloon:*>,<ore:dyeLightBlue>]);
+		recipes.addShapeless(<davincisvessels:balloon:9>, [<davincisvessels:balloon:*>,<ore:dyeCyan>]);
+		recipes.addShapeless(<davincisvessels:balloon:13>, [<davincisvessels:balloon:*>,<ore:dyeGreen>]);
+		recipes.addShapeless(<davincisvessels:balloon:5>, [<davincisvessels:balloon:*>,<ore:dyeLime>]);
+		recipes.addShapeless(<davincisvessels:balloon:4>, [<davincisvessels:balloon:*>,<ore:dyeYellow>]);
+		recipes.addShapeless(<davincisvessels:balloon:1>, [<davincisvessels:balloon:*>,<ore:dyeOrange>]);
+		recipes.addShapeless(<davincisvessels:balloon:14>, [<davincisvessels:balloon:*>,<ore:dyeRed>]);
+		recipes.addShapeless(<davincisvessels:balloon:12>, [<davincisvessels:balloon:*>,<ore:dyeBrown>]);
+		recipes.addShaped(<davincisvessels:marker>, [[<ore:plankWood>, <immersiveengineering:material>, <ore:plankWood>],[<immersiveengineering:material>, <minecraft:iron_block>, <immersiveengineering:material>], [<ore:plankWood>, <immersiveengineering:material>, <ore:plankWood>]]);
+	//Arc Furnace RC alloys
         mods.immersiveengineering.ArcFurnace.addRecipe(<nuclearcraft:alloy:2>, <nuclearcraft:gem_dust>, null, 200, 512, [<nuclearcraft:ingot:8>*2]);
         mods.immersiveengineering.ArcFurnace.addRecipe(<nuclearcraft:alloy:12>, <nuclearcraft:ingot:1>, null, 200, 480, [<nuclearcraft:ingot:10>*7]);
         mods.immersiveengineering.ArcFurnace.addRecipe(<nuclearcraft:alloy:4>, <nuclearcraft:ingot:6>, null, 200, 480, [<nuclearcraft:ingot_oxide:3>]);
@@ -373,3 +430,9 @@ for item in removedvanillagear {                                //Removed vanill
     //TiC casting
         mods.tconstruct.Casting.addTableRecipe(<nuclearcraft:gem:6>, <minecraft:sand>, <liquid:glass>, 100, true, 20);
         mods.tconstruct.Casting.addTableRecipe(<academy:coin>, <tconstruct:cast_custom:2>, <liquid:iron>, 72, false, 10);
+	//TiC melting
+		mods.tconstruct.Melting.addRecipe(<liquid:steel> * 144,<immersiveengineering:shovel_steel>, 500);
+		mods.tconstruct.Melting.addRecipe(<liquid:steel> * 288,<immersiveengineering:hoe_steel>, 500);
+		mods.tconstruct.Melting.addRecipe(<liquid:steel> * 288,<immersiveengineering:sword_steel>, 500);
+		mods.tconstruct.Melting.addRecipe(<liquid:steel> * 432,<immersiveengineering:axe_steel>, 500);
+		mods.tconstruct.Melting.addRecipe(<liquid:steel> * 432,<immersiveengineering:pickaxe_steel>, 500);
