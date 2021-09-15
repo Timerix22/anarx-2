@@ -414,7 +414,7 @@ for item in removedvanillagear {                                //Removed vanill
         mods.immersiveengineering.AlloySmelter.addRecipe(<nuclearcraft:part:6>, <tconstruct:edible:3>*2, <minecraft:reeds>*2, 1000);
         mods.immersiveengineering.AlloySmelter.addRecipe(<minecraft:prismarine>, <minecraft:stone:3>, <tconstruct:edible:1>*2, 40);
     //IECrusher
-        mods.immersiveengineering.Crusher.addRecipe(<nuclearcraft:dust:8>, <minecraft:stone:1>, 8000, <nuclearcraft:gem_dust:1>*2, 0.5);            //Гранит
+        mods.immersiveengineering.Crusher.addRecipe(<nuclearcraft:gem_dust:8>, <minecraft:stone:1>, 8000, <nuclearcraft:gem_dust:1>*2, 0.5);            //Гранит
         mods.immersiveengineering.Crusher.addRecipe(<nuclearcraft:dust:8>, <minecraft:stone:2>, 8000, <immersiveengineering:material:25>*2, 0.7);    //Полированный гранит
         mods.immersiveengineering.Crusher.addRecipe(<nuclearcraft:dust:10>, <minecraft:stone:3>, 8000, <nuclearcraft:gem_dust:9>*2, 0.7);            //Диорит
         mods.immersiveengineering.Crusher.addRecipe(<nuclearcraft:dust:10>, <minecraft:stone:4>, 8000, <nuclearcraft:gem_dust:5>*2, 0.7);            //Полированный диорит
