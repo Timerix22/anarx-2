@@ -10,7 +10,7 @@ mods.jei.JEI.addDescription(<nuclearcraft:alloy:14>,"Его пиздец как 
 <minecraft:lava_bucket>.addTooltip(format.red("[H]Arxaniys bath water"));
 
 
-val removedvanillagear = [                            //Removed vanilla-stile gear
+val removedvanillagear = [                            //Rremoved vanilla-stile gear
     <minecraft:golden_hoe>,
     <minecraft:golden_sword>,
     <minecraft:golden_axe>,
@@ -261,7 +261,9 @@ val changedrecipes = [                                            //Other change
 	<davincisvessels:balloon:5>,
 	<davincisvessels:balloon:13>,
 	<davincisvessels:balloon:9>,
-	<davincisvessels:marker>
+	<davincisvessels:marker>,
+	<similsaxtranstructors:similsaxtranstructorbasic>,
+	<similsaxtranstructors:similsaxtranstructoradvanced>
 ] as IItemStack[];
 
 //Removing recipes
@@ -390,6 +392,9 @@ for item in removedvanillagear {                                //Removed vanill
 		recipes.addShapeless(<davincisvessels:balloon:14>, [<davincisvessels:balloon:*>,<ore:dyeRed>]);
 		recipes.addShapeless(<davincisvessels:balloon:12>, [<davincisvessels:balloon:*>,<ore:dyeBrown>]);
 		recipes.addShaped(<davincisvessels:marker>, [[<ore:plankWood>, <immersiveengineering:material>, <ore:plankWood>],[<immersiveengineering:material>, <minecraft:iron_block>, <immersiveengineering:material>], [<ore:plankWood>, <immersiveengineering:material>, <ore:plankWood>]]);
+	//Transtructors
+		recipes.addShaped(<similsaxtranstructors:similsaxtranstructorbasic>, [[<minecraft:prismarine_crystals>, null, <minecraft:prismarine_crystals>],[<minecraft:iron_ingot>, <minecraft:ender_pearl>, <minecraft:iron_ingot>], [null, <tconstruct:tool_rod>.withTag({Material: "copper"}).onlyWithTag({Material: "copper"}), null]]);
+		recipes.addShaped(<similsaxtranstructors:similsaxtranstructoradvanced>, [[<minecraft:end_crystal>, null, <minecraft:end_crystal>],[<minecraft:diamond>, <minecraft:ender_pearl>, <minecraft:diamond>], [null, <tconstruct:tool_rod>.withTag({Material: "cobalt"}).onlyWithTag({Material: "cobalt"}), null]]);
 	//Arc Furnace RC alloys
         mods.immersiveengineering.ArcFurnace.addRecipe(<nuclearcraft:alloy:2>, <nuclearcraft:gem_dust>, null, 200, 512, [<nuclearcraft:ingot:8>*2]);
         mods.immersiveengineering.ArcFurnace.addRecipe(<nuclearcraft:alloy:12>, <nuclearcraft:ingot:1>, null, 200, 480, [<nuclearcraft:ingot:10>*7]);
