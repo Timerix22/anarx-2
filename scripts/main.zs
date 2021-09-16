@@ -446,5 +446,5 @@ for item in removedvanillagear {								//Removed vanilla gear
 		mods.tconstruct.Melting.addRecipe(<liquid:steel> * 432,<immersiveengineering:axe_steel>, 500);
 		mods.tconstruct.Melting.addRecipe(<liquid:steel> * 432,<immersiveengineering:pickaxe_steel>, 500);
 	//Armor underwear
-		recipes.addShapeless(<armorunder:heating_goo>, [<toughasnails:magma_shard>*2,<ore:slimeballGreen>*2]);
-		recipes.addShapeless(<armorunder:cooling_goo>, [<toughasnails:ice_cube>*2,<ore:slimeballGreen>*2]);
+		recipes.addShaped(<armorunder:heating_goo>*2, [[<minecraft:slime_ball>,<toughasnails:magma_shard>,<minecraft:slime_ball>], [<minecraft:paper>,<toughasnails:magma_shard>,<minecraft:paper>], [<minecraft:slime_ball>,<toughasnails:magma_shard>,<minecraft:slime_ball>]]);
+		recipes.addShaped(<armorunder:cooling_goo>*2, [[<minecraft:slime_ball>,<toughasnails:ice_cube>,<minecraft:slime_ball>], [<minecraft:paper>,<toughasnails:ice_cube>,<minecraft:paper>], [<minecraft:slime_ball>,<toughasnails:ice_cube>,<minecraft:slime_ball>]]);
