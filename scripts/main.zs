@@ -264,9 +264,7 @@ val changedrecipes = [										    //Other changed recipes
 	<davincisvessels:engine>,
 	<davincisvessels:marker>,
 	<similsaxtranstructors:similsaxtranstructorbasic>,
-	<similsaxtranstructors:similsaxtranstructoradvanced>,
-	<armorunder:cool_liner_material>,
-	<armorunder:warm_liner_material>
+	<similsaxtranstructors:similsaxtranstructoradvanced>
 ] as IItemStack[];
 
 //Removing recipes
