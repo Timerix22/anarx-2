@@ -264,7 +264,9 @@ val changedrecipes = [										    //Other changed recipes
 	<davincisvessels:engine>,
 	<davincisvessels:marker>,
 	<similsaxtranstructors:similsaxtranstructorbasic>,
-	<similsaxtranstructors:similsaxtranstructoradvanced>
+	<similsaxtranstructors:similsaxtranstructoradvanced>,
+	<armorunder:heating_goo>,
+	<armorunder:cooling_goo>
 ] as IItemStack[];
 
 //Removing recipes
@@ -443,3 +445,6 @@ for item in removedvanillagear {								//Removed vanilla gear
 		mods.tconstruct.Melting.addRecipe(<liquid:steel> * 288,<immersiveengineering:sword_steel>, 500);
 		mods.tconstruct.Melting.addRecipe(<liquid:steel> * 432,<immersiveengineering:axe_steel>, 500);
 		mods.tconstruct.Melting.addRecipe(<liquid:steel> * 432,<immersiveengineering:pickaxe_steel>, 500);
+	//Armor underwear
+		recipes.addShapeless(<armorunder:heating_goo>, [<toughasnails:magma_shard>*2,<ore:slimeballGreen>*2]);
+		recipes.addShapeless(<armorunder:cooling_goo>, [<toughasnails:ice_cube>*2,<ore:slimeballGreen>*2]);
