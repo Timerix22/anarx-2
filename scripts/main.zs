@@ -264,9 +264,7 @@ val changedrecipes = [                                            //Other change
     <davincisvessels:engine>,
     <davincisvessels:marker>,
     <similsaxtranstructors:similsaxtranstructorbasic>,
-    <similsaxtranstructors:similsaxtranstructoradvanced>,
-    <armorunder:heating_goo>,
-    <armorunder:cooling_goo>
+    <similsaxtranstructors:similsaxtranstructoradvanced>
 ] as IItemStack[];
 
 //Removing recipes
@@ -436,6 +434,8 @@ for item in removedvanillagear {                                //Removed vanill
         mods.immersiveengineering.Crusher.addRecipe(<minecraft:prismarine_shard>*4, <minecraft:prismarine>, 500);
     //IEMetalPress
         mods.immersiveengineering.MetalPress.addRecipe(<academy:wafer>, <nuclearcraft:gem:6>, <immersiveengineering:mold>, 1000, 4);
+	//IERefinery
+		mods.immersiveengineering.Refinery.addRecipe(<liquid:mana_fluid>, <liquid:biodiesel>, <liquid:blood>, 2048);
     //TiC casting
         mods.tconstruct.Casting.addTableRecipe(<nuclearcraft:gem:6>, <minecraft:sand>, <liquid:glass>, 100, true, 20);
         mods.tconstruct.Casting.addTableRecipe(<academy:coin>, <tconstruct:cast_custom:2>, <liquid:iron>, 72, false, 10);
@@ -445,6 +445,3 @@ for item in removedvanillagear {                                //Removed vanill
         mods.tconstruct.Melting.addRecipe(<liquid:steel> * 288,<immersiveengineering:sword_steel>, 500);
         mods.tconstruct.Melting.addRecipe(<liquid:steel> * 432,<immersiveengineering:axe_steel>, 500);
         mods.tconstruct.Melting.addRecipe(<liquid:steel> * 432,<immersiveengineering:pickaxe_steel>, 500);
-    //Armor underwear
-        recipes.addShaped(<armorunder:heating_goo>*2, [[<minecraft:slime_ball>,<toughasnails:magma_shard>,<minecraft:slime_ball>], [<minecraft:paper>,<toughasnails:magma_shard>,<minecraft:paper>], [<minecraft:slime_ball>,<toughasnails:magma_shard>,<minecraft:slime_ball>]]);
-        recipes.addShaped(<armorunder:cooling_goo>*2, [[<minecraft:slime_ball>,<toughasnails:ice_cube>,<minecraft:slime_ball>], [<minecraft:paper>,<toughasnails:ice_cube>,<minecraft:paper>], [<minecraft:slime_ball>,<toughasnails:ice_cube>,<minecraft:slime_ball>]]);
