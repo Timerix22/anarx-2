@@ -434,8 +434,8 @@ for item in removedvanillagear {                                //Removed vanill
         mods.immersiveengineering.Crusher.addRecipe(<minecraft:prismarine_shard>*4, <minecraft:prismarine>, 500);
     //IEMetalPress
         mods.immersiveengineering.MetalPress.addRecipe(<academy:wafer>, <nuclearcraft:gem:6>, <immersiveengineering:mold>, 1000, 4);
-	//IERefinery
-		mods.immersiveengineering.Refinery.addRecipe(<liquid:mana_fluid>, <liquid:biodiesel>, <liquid:blood>, 2048);
+    //IERefinery
+	mods.immersiveengineering.Refinery.addRecipe(<liquid:mana_fluid>, <liquid:biodiesel>, <liquid:blood>, 2048);
     //TiC casting
         mods.tconstruct.Casting.addTableRecipe(<nuclearcraft:gem:6>, <minecraft:sand>, <liquid:glass>, 100, true, 20);
         mods.tconstruct.Casting.addTableRecipe(<academy:coin>, <tconstruct:cast_custom:2>, <liquid:iron>, 72, false, 10);
