@@ -277,7 +277,7 @@ for item in changedrecipes {                                    //Remove unchang
     recipes.remove(item);
 }
 for item in uslessncalloys {                                    //Remove usless NuclearCraft alloys
-    item.addTooltip("Я бесполезный слиток");
+    item.addTooltip("Useless ingot");
     recipes.remove(item);
     mods.jei.JEI.hide(item);
 }
@@ -285,7 +285,7 @@ for item in removesmelting {                                    //Tag non-smelti
     item.addTooltip("Ну давай давай переплавь в печке");
 }
 for item in removedvanillagear {                                //Removed vanilla gear
-    item.addTooltip("Ваниль? Нет, спасибо");
+    item.addTooltip("Removed for balancing purpose");
     recipes.remove(item);
     mods.jei.JEI.hide(item);
 }
@@ -393,16 +393,16 @@ for item in removedvanillagear {                                //Removed vanill
         recipes.addShapeless(<davincisvessels:balloon:15>, [<davincisvessels:balloon:*>,<ore:dyeBlack>]);
         recipes.addShaped(<davincisvessels:engine>, [[<immersiveengineering:metal:31>, <immersiveengineering:material:10>, <immersiveengineering:metal:31>],[<immersiveengineering:material:11>, <simplegenerators:combustion_upgradable>, <immersiveengineering:material:11>], [<immersiveengineering:metal:31>, <immersiveengineering:material:10>, <immersiveengineering:metal:31>]]);
         recipes.addShaped(<davincisvessels:marker>, [[<ore:plankWood>, <immersiveengineering:material>, <ore:plankWood>],[<immersiveengineering:material>, <minecraft:iron_block>, <immersiveengineering:material>], [<ore:plankWood>, <immersiveengineering:material>, <ore:plankWood>]]);
-	//ModularWarfare
-		//Firearms
-			recipes.addShaped(<modularwarfare:prototype.mosin_nagant>, [[null, <immersiveengineering:metal:38>, <tconstruct:large_plate>.withTag({Material: "treatedwood"}).onlyWithTag({Material: "treatedwood"})],[<immersiveengineering:material:14>, <immersiveengineering:material:14>, <immersiveengineering:material:9>], [<immersiveengineering:metal:38>, <immersiveengineering:material:16>, <immersiveengineering:material:13>]]);
-			recipes.addShaped(<modularwarfare:prototype.sks>, [[null, <immersiveengineering:metal:38>, <tconstruct:large_plate>.withTag({Material: "treatedwood"}).onlyWithTag({Material: "treatedwood"})],[<immersiveengineering:material:14>, <immersiveengineering:material:9>, <immersiveengineering:material:9>], [<immersiveengineering:metal:38>, <immersiveengineering:material:16>, <immersiveengineering:material:13>]]);
-			recipes.addShaped(<modularwarfare:prototype.mg42>, [[<immersiveengineering:metal:38>, <tconstruct:large_plate>.withTag({Material: "steel"}).onlyWithTag({Material: "steel"}), <tconstruct:large_plate>.withTag({Material: "treatedwood"}).onlyWithTag({Material: "treatedwood"})],[<immersiveengineering:material:14>, <immersiveengineering:material:9>, <immersiveengineering:material:16>], [<immersiveengineering:metal:38>, <immersiveengineering:metal:38>, <immersiveengineering:material:13>]]);
-			recipes.addShaped(<modularwarfare:prototype.mp40>, [[<immersiveengineering:metal:38>, <immersiveengineering:metal:38>, <immersiveengineering:material:2>],[<immersiveengineering:material:14>, <immersiveengineering:material:9>, <immersiveengineering:material:16>], [null, <immersiveengineering:metal:38>, <immersiveengineering:material:13>]]);
-		//Blueprints
-			recipes.addShaped(<immersiveengineering:blueprint>.withTag({blueprint: "MW Mags"}), [[<immersiveengineering:metal:38>, <immersiveengineering:material:9>, <immersiveengineering:metal:38>],[<minecraft:dye:4>, <minecraft:dye:4>, <minecraft:dye:4>], [<minecraft:paper>, <minecraft:paper>, <minecraft:paper>]]);
-			recipes.addShaped(<immersiveengineering:blueprint>.withTag({blueprint: "MW Clips"}), [[<immersiveengineering:metal:38>, <immersiveengineering:metal:39>, <immersiveengineering:metal:38>],[<minecraft:dye:4>, <minecraft:dye:4>, <minecraft:dye:4>], [<minecraft:paper>, <minecraft:paper>, <minecraft:paper>]]);
-			recipes.addShaped(<immersiveengineering:blueprint>.withTag({blueprint: "MW Ammo"}), [[<immersiveengineering:bullet>, <immersiveengineering:metal:28>, <minecraft:gunpowder>],[<minecraft:dye:4>, <minecraft:dye:4>, <minecraft:dye:4>], [<minecraft:paper>, <minecraft:paper>, <minecraft:paper>]]);
+    //ModularWarfare
+	//Firearms
+	    recipes.addShaped(<modularwarfare:prototype.mosin_nagant>, [[null, <immersiveengineering:metal:38>, <tconstruct:large_plate>.withTag({Material: "treatedwood"}).onlyWithTag({Material: "treatedwood"})],[<immersiveengineering:material:14>, <immersiveengineering:material:14>, <immersiveengineering:material:9>], [<immersiveengineering:metal:38>, <immersiveengineering:material:16>, <immersiveengineering:material:13>]]);
+	    recipes.addShaped(<modularwarfare:prototype.sks>, [[null, <immersiveengineering:metal:38>, <tconstruct:large_plate>.withTag({Material: "treatedwood"}).onlyWithTag({Material: "treatedwood"})],[<immersiveengineering:material:14>, <immersiveengineering:material:9>, <immersiveengineering:material:9>], [<immersiveengineering:metal:38>, <immersiveengineering:material:16>, <immersiveengineering:material:13>]]);
+	    recipes.addShaped(<modularwarfare:prototype.mg42>, [[<immersiveengineering:metal:38>, <tconstruct:large_plate>.withTag({Material: "steel"}).onlyWithTag({Material: "steel"}), <tconstruct:large_plate>.withTag({Material: "treatedwood"}).onlyWithTag({Material: "treatedwood"})],[<immersiveengineering:material:14>, <immersiveengineering:material:9>, <immersiveengineering:material:16>], [<immersiveengineering:metal:38>, <immersiveengineering:metal:38>, <immersiveengineering:material:13>]]);
+	    recipes.addShaped(<modularwarfare:prototype.mp40>, [[<immersiveengineering:metal:38>, <immersiveengineering:metal:38>, <immersiveengineering:material:2>],[<immersiveengineering:material:14>, <immersiveengineering:material:9>, <immersiveengineering:material:16>], [null, <immersiveengineering:metal:38>, <immersiveengineering:material:13>]]);
+	//Blueprints
+	    recipes.addShaped(<immersiveengineering:blueprint>.withTag({blueprint: "MW Mags"}), [[<immersiveengineering:metal:38>, <immersiveengineering:material:9>, <immersiveengineering:metal:38>],[<minecraft:dye:4>, <minecraft:dye:4>, <minecraft:dye:4>], [<minecraft:paper>, <minecraft:paper>, <minecraft:paper>]]);
+	    recipes.addShaped(<immersiveengineering:blueprint>.withTag({blueprint: "MW Clips"}), [[<immersiveengineering:metal:38>, <immersiveengineering:metal:39>, <immersiveengineering:metal:38>],[<minecraft:dye:4>, <minecraft:dye:4>, <minecraft:dye:4>], [<minecraft:paper>, <minecraft:paper>, <minecraft:paper>]]);
+	    recipes.addShaped(<immersiveengineering:blueprint>.withTag({blueprint: "MW Ammo"}), [[<immersiveengineering:bullet>, <immersiveengineering:metal:28>, <minecraft:gunpowder>],[<minecraft:dye:4>, <minecraft:dye:4>, <minecraft:dye:4>], [<minecraft:paper>, <minecraft:paper>, <minecraft:paper>]]);
     //Transtructors
         recipes.addShaped(<similsaxtranstructors:similsaxtranstructorbasic>, [[<minecraft:prismarine_crystals>, null, <minecraft:prismarine_crystals>],[<minecraft:iron_ingot>, <minecraft:ender_pearl>, <minecraft:iron_ingot>], [null, <tconstruct:tool_rod>.withTag({Material: "copper"}).onlyWithTag({Material: "copper"}), null]]);
         recipes.addShaped(<similsaxtranstructors:similsaxtranstructoradvanced>, [[<minecraft:end_crystal>, null, <minecraft:end_crystal>],[<minecraft:diamond>, <minecraft:ender_pearl>, <minecraft:diamond>], [null, <tconstruct:tool_rod>.withTag({Material: "cobalt"}).onlyWithTag({Material: "cobalt"}), null]]);
@@ -444,19 +444,19 @@ for item in removedvanillagear {                                //Removed vanill
     //IEMetalPress
         mods.immersiveengineering.MetalPress.addRecipe(<academy:wafer>, <nuclearcraft:gem:6>, <immersiveengineering:mold>, 1000, 4);
     //IERefinery
-	    mods.immersiveengineering.Refinery.addRecipe(<liquid:mana_fluid>, <liquid:biodiesel>, <liquid:blood>, 2048);
-	//IEBlueprints
-		//MW Ammo																																														//Патроны из MW
-			mods.immersiveengineering.Blueprint.addRecipe("MW Ammo", <modularwarfare:prototype.9x19>, [<minecraft:gunpowder>, <immersiveengineering:bullet>, <immersiveengineering:metal:28>]);				//9x19(MP40)
-			mods.immersiveengineering.Blueprint.addRecipe("MW Ammo", <modularwarfare:prototype.7_62x39>, [<minecraft:gunpowder>, <immersiveengineering:bullet>, <immersiveengineering:metal:28>]);			//7,62x39(SKS)
-			mods.immersiveengineering.Blueprint.addRecipe("MW Ammo", <modularwarfare:prototype.7_62x54>, [<minecraft:gunpowder>, <immersiveengineering:bullet>, <immersiveengineering:metal:28>]);			//7,62x54(Mosin Nagant)
-			mods.immersiveengineering.Blueprint.addRecipe("MW Ammo", <modularwarfare:prototype.7_62x57>, [<minecraft:gunpowder>, <immersiveengineering:bullet>, <immersiveengineering:metal:28>]);			//7,62x57(MG42)
-		//MW Clips																																														//Обоймы из MW
-			mods.immersiveengineering.Blueprint.addRecipe("MW Clips", <modularwarfare:prototype.sksammo>, [<immersiveengineering:metal:38>*3]);																//SKS x10
-			mods.immersiveengineering.Blueprint.addRecipe("MW Clips", <modularwarfare:prototype.mosin_nagantammo>, [<immersiveengineering:metal:38>*2]);													//Mosin Nagant x5
-		//MW Mags
-			mods.immersiveengineering.Blueprint.addRecipe("MW Mags", <modularwarfare:prototype.mg42ammo>, [<immersiveengineering:metal:38>*5,<immersiveengineering:metal:9>]);
-			mods.immersiveengineering.Blueprint.addRecipe("MW Mags", <modularwarfare:prototype.mp40ammo>, [<immersiveengineering:metal:38>*7,<immersiveengineering:metal:9>]);
+	mods.immersiveengineering.Refinery.addRecipe(<liquid:mana_fluid>, <liquid:biodiesel>, <liquid:blood>, 2048);
+    //IEBlueprints
+	//MW Ammo																								    //Патроны из MW
+	    mods.immersiveengineering.Blueprint.addRecipe("MW Ammo", <modularwarfare:prototype.9x19>, [<minecraft:gunpowder>, <immersiveengineering:bullet>, <immersiveengineering:metal:28>]);				//9x19(MP40)
+	    mods.immersiveengineering.Blueprint.addRecipe("MW Ammo", <modularwarfare:prototype.7_62x39>, [<minecraft:gunpowder>, <immersiveengineering:bullet>, <immersiveengineering:metal:28>]);			//7,62x39(SKS)
+	    mods.immersiveengineering.Blueprint.addRecipe("MW Ammo", <modularwarfare:prototype.7_62x54>, [<minecraft:gunpowder>, <immersiveengineering:bullet>, <immersiveengineering:metal:28>]);			//7,62x54(Mosin Nagant)
+	    mods.immersiveengineering.Blueprint.addRecipe("MW Ammo", <modularwarfare:prototype.7_62x57>, [<minecraft:gunpowder>, <immersiveengineering:bullet>, <immersiveengineering:metal:28>]);			//7,62x57(MG42)
+	//MW Clips																								    //Обоймы из MW
+	    mods.immersiveengineering.Blueprint.addRecipe("MW Clips", <modularwarfare:prototype.sksammo>, [<immersiveengineering:metal:38>*3]);										//SKS x10
+	    mods.immersiveengineering.Blueprint.addRecipe("MW Clips", <modularwarfare:prototype.mosin_nagantammo>, [<immersiveengineering:metal:38>*2]);								//Mosin Nagant x5
+	//MW Mags																								    //Магазины из MW
+	    mods.immersiveengineering.Blueprint.addRecipe("MW Mags", <modularwarfare:prototype.mg42ammo>, [<immersiveengineering:metal:38>*5,<immersiveengineering:metal:9>]);
+	    mods.immersiveengineering.Blueprint.addRecipe("MW Mags", <modularwarfare:prototype.mp40ammo>, [<immersiveengineering:metal:38>*7,<immersiveengineering:metal:9>]);
     //TiC casting
         mods.tconstruct.Casting.addTableRecipe(<nuclearcraft:gem:6>, <minecraft:sand>, <liquid:glass>, 100, true, 20);
         mods.tconstruct.Casting.addTableRecipe(<academy:coin>, <tconstruct:cast_custom:2>, <liquid:iron>, 72, false, 10);
